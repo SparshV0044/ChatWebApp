@@ -19,6 +19,11 @@ const useStyles = makeStyles({
     background: "#00bfa5",
     boxShadow: "none",
   },
+  Header: {
+    height: 115,
+    background: "#00bfa5",
+    boxShadow: "none",
+  },
 });
 
 const Messenger = () => {
@@ -27,7 +32,7 @@ const Messenger = () => {
   return (
     <>
       <Box className={classes.component}>
-        <AppBar className={classes.loginHeader}>
+        <AppBar className={account ? classes.Header : classes.loginHeader}>
           <Toolbar></Toolbar>
         </AppBar>
         {account ? <ChatBox /> : <Login />}
