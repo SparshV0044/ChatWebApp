@@ -1,8 +1,10 @@
-import * as React from "react";
+import React, { useContext } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Box from "@material-ui/core/Box";
+import { AccountContext } from "./context/Accountprovider";
+import ChatBox from "./ChatBox";
 
 //Components
 import Login from "./account/Login";
@@ -21,13 +23,14 @@ const useStyles = makeStyles({
 
 const Messenger = () => {
   const classes = useStyles();
+  const { account } = useContext(AccountContext);
   return (
     <>
       <Box className={classes.component}>
         <AppBar className={classes.loginHeader}>
           <Toolbar></Toolbar>
         </AppBar>
-        <Login />
+        {account ? <ChatBox /> : <Login />}
       </Box>
     </>
   );

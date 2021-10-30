@@ -1,11 +1,14 @@
 import "./App.css";
 //Components
 import Messenger from "./components/Messenger";
-import Login from "./components/account/Login";
+import Accountprovider from "./components/context/Accountprovider";
+
 function App() {
   return (
     <>
-      <Messenger />
+      <Accountprovider>
+        <Messenger />
+      </Accountprovider>
     </>
   );
 }
