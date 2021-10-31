@@ -19,7 +19,7 @@ const useStyles = makeStyles({
 const style = {
   dialogPaper: {
     height: "95%",
-    width: "91%",
+    width: "90%",
 
     boxShadow: "none",
     borderRadius: "0",

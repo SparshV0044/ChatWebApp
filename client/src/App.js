@@ -2,13 +2,15 @@ import "./App.css";
 //Components
 import Messenger from "./components/Messenger";
 import Accountprovider from "./components/context/Accountprovider";
-
+import TemplateProvider from "./theme/TemplateProvider";
 function App() {
   return (
     <>
-      <Accountprovider>
-        <Messenger />
-      </Accountprovider>
+      <TemplateProvider>
+        <Accountprovider>
+          <Messenger />
+        </Accountprovider>
+      </TemplateProvider>
     </>
   );
 }

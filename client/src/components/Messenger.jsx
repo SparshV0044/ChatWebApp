@@ -11,17 +11,17 @@ import Login from "./account/Login";
 
 const useStyles = makeStyles({
   component: {
-    background: "#DCDCDC",
     height: "100vh",
+    background: "#DCDCDC",
   },
-  loginHeader: {
-    height: 200,
-    background: "#00bfa5",
+  header: {
+    background: "#128C7E",
+    height: 115,
     boxShadow: "none",
   },
-  Header: {
-    height: 115,
+  loginHeader: {
     background: "#00bfa5",
+    height: 200,
     boxShadow: "none",
   },
 });
