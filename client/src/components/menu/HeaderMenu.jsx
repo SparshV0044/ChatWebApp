@@ -18,7 +18,7 @@ const useStyles = makeStyles({
     border: "none!important",
     boxShadow: "none!important",
     "& > *": {
-      padding: "0px !important",
+      padding: "0px!important",
     },
   },
 });
